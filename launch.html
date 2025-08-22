@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Launch Page – K–3</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .launch-hero{background:linear-gradient(#eef2ff,#fff);border-bottom:1px solid #eee}
+    .launch-hero .container{padding:28px 0}
+    .grade-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:22px 0}
+    .grade-card{border:1px solid #e5e7eb;border-radius:22px;padding:20px;text-align:center;box-shadow:0 6px 18px rgba(0,0,0,.04)}
+    .grade-card h2{margin:8px 0 6px;font-size:28px}
+    .grade-card p{margin:0;color:#6b7280}
+    .grade-btn{display:inline-block;margin-top:10px;border:1px solid #ddd;border-radius:12px;padding:10px 16px;text-decoration:none;font-weight:700}
+    .grade-btn.primary{background:#2563eb;color:#fff;border-color:#2563eb}
+    .list{margin-top:14px;text-align:left}
+    .list h4{margin:10px 0 6px;color:#6b7280;font-size:12px;letter-spacing:.04em}
+    .list a{display:block;text-decoration:none;padding:4px 0}
+    .list a:hover{text-decoration:underline}
+    @media (max-width:900px){.grade-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:560px){.grade-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="top-rail">
+    <div class="container rail-items">
+      <a href="index.html">HOME</a><span>|</span><a href="index.html">MENU</a>
+    </div>
+  </div>
+
+  <section class="launch-hero">
+    <div class="container">
+      <h1 style="margin:0 0 6px">Launch Page – K–3</h1>
+      <p class="muted">Tap your grade to get started. Big buttons, easy navigation for little learners.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <div id="grades" class="grade-grid"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© <span id="yr"></span> <span id="teacher"></span>. Built for students.</span>
+      <div class="foot-links">
+        <a href="index.html">Back to Site</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="site-data.js"></script>
+  <script src="launch.js"></script>
+</body>
+</html>
