@@ -1,0 +1,34 @@
+
+*{box-sizing:border-box}html,body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;color:#0f172a;background:#fff}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+.bar{background:#0f172a;color:#e5e7eb}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.bar a{color:#93c5fd;text-decoration:none}
+.hero{padding:24px 0;border-bottom:1px solid #e5e7eb}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.toc a{display:inline-block;padding:6px 10px;border:1px solid #e5e7eb;border-radius:999px;text-decoration:none;color:#1f2937;font-size:14px}
+.card{margin:18px 0;padding:18px;border:1px solid #e5e7eb;border-radius:16px;box-shadow:0 2px 10px rgba(0,0,0,.03)}
+.grid{display:grid;gap:12px}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+.grid.four{grid-template-columns:repeat(4,1fr)}
+.vocab{border:1px solid #f1f5f9;border-radius:12px;padding:12px;background:#f8fafc}
+.checks{margin:0;padding-left:18px}
+.drag-area{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.bank{border:1px dashed #cbd5e1;border-radius:12px;padding:10px;display:flex;flex-wrap:wrap;gap:8px;min-height:70px}
+.chip{padding:8px 10px;border:1px solid #cbd5e1;border-radius:999px;background:#f1f5f9;cursor:grab}
+.zones{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.zone{border:1px solid #cbd5e1;border-radius:12px;padding:10px}
+.drop{min-height:84px;display:flex;flex-wrap:wrap;gap:8px}
+.btn{border:1px solid #1d4ed8;background:#1d4ed8;color:#fff;border-radius:10px;padding:8px 12px;font-weight:600;cursor:pointer}
+.btn.outline{background:#fff;color:#1d4ed8}
+.result{margin-left:10px;font-weight:600}
+.muted{color:#64748b}
+.login{display:grid;grid-template-columns:1fr 1fr auto;gap:10px;align-items:end}
+.login input{width:100%;padding:8px;border:1px solid #cbd5e1;border-radius:8px}
+.icons .icon-card{border:1px solid #e5e7eb;border-radius:12px;padding:16px;text-align:center;background:#f8fafc}
+.ico{font-size:20px;margin-bottom:6px}
+.icon-card.reveal{cursor:pointer;font-size:20px}
+.links{display:flex;gap:10px;margin-top:10px}
+.top{padding:20px 0;text-align:center}
+.foot{border-top:1px solid #e5e7eb;padding:16px 0;margin-top:24px}
+@media (max-width:760px){.grid.two{grid-template-columns:1fr}.grid.four{grid-template-columns:repeat(2,1fr)}.drag-area{grid-template-columns:1fr}.login{grid-template-columns:1fr}}

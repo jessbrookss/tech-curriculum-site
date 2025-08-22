@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning Units – Clickable Lesson</title>
+  <link rel="stylesheet" href="lesson.css">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <strong>Technology Curriculum – Ms. Brooks</strong>
+    <nav>
+      <a href="https://jessbrookss.github.io/tech-curriculum-site/launch.html" target="_blank" rel="noopener">Back to Launch Page ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero" id="top">
+    <h1>Learning Units</h1>
+    <p><strong>By the end of this class you will:</strong></p>
+    <ul>
+      <li>Log into a computer</li>
+      <li>Review the computer lab rules</li>
+      <li>Learn new technology vocabulary words</li>
+      <li>Navigate the internet using the correct buttons</li>
+    </ul>
+    <div class="toc">
+      <h3>Jump to:</h3>
+      <a href="#care">Caring for Your Digital Device</a>
+      <a href="#vocab">Vocabulary Cards</a>
+      <a href="#teaching">Teaching Cards</a>
+      <a href="#drag">Safe or Not Safe (Drag & Drop)</a>
+      <a href="#quiz">Quick Quiz</a>
+      <a href="#login">Login Simulator</a>
+      <a href="#windows">Window Buttons</a>
+      <a href="#cursor">Match the Cursor Icons</a>
+      <a href="#optional">Optional Activity</a>
+      <a href="#finishers">Early Finishers</a>
+      <a href="#standards">Standards & I Can</a>
+    </div>
+  </section>
+
+  <section id="care" class="card">
+    <h2>💻 Caring for Your Digital Device</h2>
+    <p><strong>📘 Meet Digi and Byte!</strong> These tech friends love when we treat devices with respect!</p>
+  </section>
+
+  <section id="vocab" class="card">
+    <h2>🧠 Vocabulary Cards</h2>
+    <div class="grid two">
+      <div class="vocab"><strong>Device</strong><br><span>A computer or tablet</span></div>
+      <div class="vocab"><strong>Safe</strong><br><span>Not likely to break</span></div>
+      <div class="vocab"><strong>Clean</strong><br><span>No mess or crumbs</span></div>
+      <div class="vocab"><strong>Gentle</strong><br><span>Soft touches only</span></div>
+    </div>
+  </section>
+
+  <section id="teaching" class="card">
+    <h2>📚 Teaching Cards</h2>
+    <ul class="checks">
+      <li>Two Hands — Carry your device with two hands</li>
+      <li>No Food — No food or drinks near devices</li>
+      <li>Clean Hands — Use clean hands before touching</li>
+      <li>Close Lid — Close lids gently and never stack books</li>
+    </ul>
+  </section>
+
+  <section id="drag" class="card">
+    <h2>✅ Safe or Not Safe? (Drag-and-Drop)</h2>
+    <p>Drag each item into the correct category:</p>
+    <div class="drag-area">
+      <div class="bank" id="bank">
+        <div class="chip" draggable="true">Clean hands</div>
+        <div class="chip" draggable="true">Food and drink</div>
+        <div class="chip" draggable="true">Two hands to carry</div>
+        <div class="chip" draggable="true">Slamming the lid</div>
+        <div class="chip" draggable="true">Gentle taps</div>
+        <div class="chip" draggable="true">Stacking heavy books</div>
+      </div>
+      <div class="zones">
+        <div class="zone" data-accept="safe">
+          <h4>Safe</h4>
+          <div class="drop" id="safe"></div>
+        </div>
+        <div class="zone" data-accept="not">
+          <h4>Not Safe</h4>
+          <div class="drop" id="not"></div>
+        </div>
+      </div>
+    </div>
+    <button class="btn" id="checkDrag">Check Answers</button>
+    <span id="dragResult" class="result"></span>
+  </section>
+
+  <section id="quiz" class="card">
+    <h2>🧠 Quick Quiz</h2>
+    <p><strong>What should you do before using your device?</strong></p>
+    <div class="choices" data-answer="Wash your hands">
+      <button class="choice">Wash your hands</button>
+      <button class="choice">Eat a snack</button>
+    </div>
+    <span class="result" id="quizResult"></span>
+  </section>
+
+  <section id="login" class="card">
+    <h2>🔐 Login Simulator</h2>
+    <p>This is what a login box looks like. Username goes on top, password goes on the bottom.</p>
+    <form id="loginForm" class="login">
+      <label>Username<br><input type="text" placeholder="Enter your username" required></label>
+      <label>Password<br><input type="password" placeholder="Enter your password" required></label>
+      <button type="submit" class="btn">Login</button>
+    </form>
+    <span id="loginMsg" class="result"></span>
+  </section>
+
+  <section id="windows" class="card">
+    <h2>🪟 Review Window Buttons</h2>
+    <div class="grid four icons">
+      <div class="icon-card"><div class="ico">—</div><div>Minimize</div></div>
+      <div class="icon-card"><div class="ico">▢</div><div>Maximize</div></div>
+      <div class="icon-card"><div class="ico">⤿</div><div>Reopen</div></div>
+      <div class="icon-card"><div class="ico">✕</div><div>Close</div></div>
+    </div>
+  </section>
+
+  <section id="cursor" class="card">
+    <h2>🖱️ Match the Cursor Icons</h2>
+    <p>Click to see the name:</p>
+    <div class="grid four icons">
+      <button class="icon-card reveal" data-name="Pointer">⬆</button>
+      <button class="icon-card reveal" data-name="I‑Beam (Text)">I</button>
+      <button class="icon-card reveal" data-name="Hand (Link)">🤚</button>
+      <button class="icon-card reveal" data-name="Resize">↔</button>
+    </div>
+    <span id="cursorMsg" class="muted"></span>
+  </section>
+
+  <section id="optional" class="card">
+    <h2>🧩 Optional Activity (if you have time)</h2>
+    <p>Drag tiles to reveal a secret picture.</p>
+    <div class="links">
+      <a class="btn" href="https://docs.google.com/presentation/u/0/" target="_blank" rel="noopener">Google Slides Version</a>
+      <a class="btn outline" href="#" title="Replace this with your PowerPoint link">PowerPoint Version</a>
+    </div>
+    <p class="muted">If you have a Google Account, click the Google Slides Version and then go to <em>File → Make a Copy</em>.<br>If you have PowerPoint, click PowerPoint Version and then it will download to your device.</p>
+  </section>
+
+  <section id="finishers" class="card">
+    <h2>⏱ Early Finishers</h2>
+    <p>If you finish early you may go to the Sponge Activities in the <strong>#EXTRAS</strong> menu.</p>
+  </section>
+
+  <section id="standards" class="card">
+    <h2>📏 Standards & I Can Statements</h2>
+    <p><strong>Strand: Empowered Learner</strong></p>
+    <p><strong>Standard: 1.d.</strong> Students understand the fundamental concepts of technology operations, demonstrate the ability to choose, use, and troubleshoot current technologies and are able to transfer their knowledge to explore emerging technologies.</p>
+    <ul>
+      <li>I can log into my account on a networked device.</li>
+      <li>I can follow classroom procedures.</li>
+      <li>I can click on links to access lesson activities.</li>
+    </ul>
+  </section>
+
+  <p class="top"><a href="#top">↑ Back to top</a></p>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <small>© 2025 Ms. Brooks • Built for K–3 learners</small>
+  </div>
+</footer>
+
+<script src="lesson.js"></script>
+</body>
+</html>
